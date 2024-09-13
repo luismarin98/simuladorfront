@@ -1,5 +1,5 @@
-import { Home_Route } from "./Home";
-import { Dashboard_Route } from "./Dashboard";
-import { NotFound_Route } from "./404";
+import { HOME_ROUTE } from "./Home";
+import { DASHBOARD_ROUTE } from "./Dashboard";
+import { NOTFOUND_ROUTE } from "./404";
 
-export { Home_Route, Dashboard_Route, NotFound_Route }
+export { HOME_ROUTE, DASHBOARD_ROUTE, NOTFOUND_ROUTE }

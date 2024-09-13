@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 
-export const Home_Route = () => {
+export const HOME_ROUTE = () => {
     useEffect(() => { document.title = 'Simulador Complexivo' }, [])
     return <div className="w-full h-full flex items-center justify-center">Home</div>
 }

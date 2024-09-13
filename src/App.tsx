@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Dashboard_Route, Home_Route, NotFound_Route } from "./Routes";
+import { DASHBOARD_ROUTE, HOME_ROUTE, NOTFOUND_ROUTE } from "./Routes";
 import { Navbar } from "./Components/Navbar";
 
 function App() {
@@ -8,14 +8,14 @@ function App() {
       <div className="flex justify-between items-center flex-col gap-2 w-full h-full">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home_Route />} />
-          <Route path="/dashboard" element={<Dashboard_Route />}>
-            <Route path=":user_id" element={<Dashboard_Route />} />
-            <Route path=":user_id/profile" element={<Dashboard_Route />} />
-            <Route path=":user_id/simulador" element={<Dashboard_Route />} />
-            <Route path=":user_id/cuestionarios" element={<Dashboard_Route />} />
+          <Route path="/" element={<HOME_ROUTE />} />
+          <Route path="/dashboard" element={<DASHBOARD_ROUTE />}>
+            <Route path=":user_id" element={<DASHBOARD_ROUTE />} />
+            <Route path=":user_id/profile" element={<DASHBOARD_ROUTE />} />
+            <Route path=":user_id/simulador" element={<DASHBOARD_ROUTE />} />
+            <Route path=":user_id/cuestionarios" element={<DASHBOARD_ROUTE />} />
           </Route>
-          <Route path="/*" element={<NotFound_Route />} />
+          <Route path="/*" element={<NOTFOUND_ROUTE />} />
         </Routes>
       </div>
     </div>
